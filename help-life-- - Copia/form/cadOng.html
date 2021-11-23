@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleform.css">
+    <title>Help Life</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <div class="box">
+        <section>
+            <p class="title-form">Cadastre-se</p>
+            <p class="obs">Informações como Nome, Endereço, Telefone, entre outros ficarão disponiveis na página de sua
+                Ong</p>
+            <form id="signup-form">
+                <label for="#">Nome da Instituição</label>
+                <input type="text" id="signup-nome">
+                <label for="#">Nome do responsável</label>
+                <input type="text" id="responsavel">
+                <label for="#">Endereço</label>
+                <input type="text" id="endereco">
+                <label for="#">Telefone</label>
+                <input type="tel" id="telefone">
+                <label for="#">Número do Whatsapp para contato</label>
+                <input type="number" id="zap" placeholder="55(99)99999-9999">
+                <label for="#">Cnpj</label>
+                <input type="text" id="cnpj">
+                <label for="#">Email</label>
+                <input type="email" id="signup-email">
+                <label for="password">Senha</label>
+                <input type="password" id="signup-password" />
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
+                <label for="#">Insira o website da respectiva ONG</label>
+                <input id="website"  type="text"/>
+                <label for="#">Introdução</label>
+                <input id="introducao" type="text"/>
+
+                <!-- <label for="image1" class="up-img" onclick="show1()">Imagem 1 - Painel central</label>
+            <input type="file" id="image1" accept="image/png, image/jpeg" onchange="loadFile(event)">
+            <div class="alignImg">
+                <img id="output"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#aaaaaa" id="seta1" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                </svg>
+            </div>
+            
+            <label for="image2" class="up-img" onclick="show2()">Imagem 2 - Painel secundario</label>
+            <input type="file" id="image2" accept="image/png, image/jpeg" onchange="loadFile1(event)">
+            <div class="alignImg">
+                <img id="output1"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#aaaaaa" id="seta2" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                </svg>
+            </div> -->
+
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <button class="btn yellow darken-2 z-depth-0" href="../loggedOng/index.html">Cadastrar-se</button>
+                    <abbr title="continuar para login">
+                        <svg id="seta3" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#051D52"
+                            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                        </svg>
+                    </abbr>
+                    </a>
+                </div>
+            </form>
+            <span>Já tem uma conta? <a href="logOng.html">Entrar</a> </span>
+        </section>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyDBXIkjF58K7SIwmbb5oinqhPmEFVnfPLo",
+            authDomain: "help-life-96b28.firebaseapp.com",
+            databaseURL: "https://help-life-96b28-default-rtdb.firebaseio.com",
+            projectId: "help-life-96b28",
+            storageBucket: "help-life-96b28.appspot.com",
+            messagingSenderId: "333592759358",
+            appId: "1:333592759358:web:1df02da30a91fd1c35956f",
+        };
+        firebase.initializeApp(firebaseConfig);
+
+        // make auth and firestore references
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        // update firestore settings
+        db.settings({ timestampsInSnapshots: true });
+    </script>
+
+    <script src="../js/cadastrojs/cadastroOng.js"></script>
+
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#signup-password');
+        togglePassword.addEventListener('click', function (e) {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('bi-eye');
+        });
+    </script>
+
+    <!--     <script>
+        var loadFile = function(event) {
+        var output = document.getElementById('output');
+        output.src = URL.createObjectURL(event.target.files[0]);
+        output.onload = function() {
+            URL.revokeObjectURL(output.src)
+        }
+        };
+        var loadFile1 = function(event) {
+        var output1 = document.getElementById('output1');
+        output1.src = URL.createObjectURL(event.target.files[0]);
+        output1.onload = function() {
+            URL.revokeObjectURL(output1.src)
+        }
+        };
+        function show1(){
+        var div = document.getElementById("seta1");
+        div.style.display = "block";
+        }
+        function show2(){
+        var div = document.getElementById("seta2");
+        div.style.display = "block";
+        }
+    </script> -->
+
+
+</body>
+
+</html>
