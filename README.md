@@ -2,7 +2,7 @@
 
 Projeto em desenvolvimento em ReactJS
 
-## Pacotes utilizados
+## Comandos necessários:
 
 react-router-dom
 
