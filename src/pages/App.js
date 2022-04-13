@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './Home'
-import About from './About'
-import Ong from './Ong'
+import Home from './main/Home'
+import About from './main/About'
+import Ong from './main/Ong'
 import ErrorPage from './Error'
 import Nav from '../components/props/Nav'
+import Footer from '../components/props/Footer'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/ong" element={<Ong />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </Router>
   )
 }
