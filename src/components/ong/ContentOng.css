@@ -1,28 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{font-family: sans-serif; list-style: none; text-decoration: none; margin: 0; padding: 0;}
-body{color: #21489d; background-color: #f8f8f8;}
-body::-webkit-scrollbar {width: 6px;}
-body::-webkit-scrollbar-track {background: transparent;}
-body::-webkit-scrollbar-thumb {background-color: #f14b3d;}
-
-#items-menu{display: flex; align-items: center;}
-#user{cursor: pointer;}
-h1{font-size: 5em; padding: 5% 0%;}
-p{font-size: 1em;}
-a{color: currentColor;}
+#contentOng h1{font-size: 5em; padding: 5% 0%;}
+#contentOng p{font-size: 1em;}
+#contentOng a{color: currentColor;}
 .part3{margin: 5% 8%; display: flex; align-items:center ;}
 .part3 p{font-family: 'Noto Sans Mono', monospace; font-size: 18px; margin-bottom: 5%;}
 
-#hl li a{font-family: 'Noto Sans Mono', monospace; font-size: 30px; color: #f14b3d; border-left: solid 4px #f14b3d;}
+#contentOng .registrar{background-color: #f8f8f8; color: #21489d; border: 2px solid #21489d; font-size: 20px; padding: 12px 20px; font-family: 'Source Sans Pro', sans-serif; transition: background-color, color 0.3s;}
+#contentOng .registrar:hover{background-color: #21489d; color: #f8f8f8; cursor: pointer;}
+
+#contentOng hl li a{font-family: 'Noto Sans Mono', monospace; font-size: 30px; color: #f14b3d; border-left: solid 4px #f14b3d;}
 
 @media only screen and (max-width: 1015px) {
     h1{font-size: 4em; padding: 2% 0%;}
     .registrar{font-size: 20px; padding: 6px 10px; margin-top: 1%;}
     img{display: none;}
-
 }
 
 @media only screen and (max-width: 800px) {

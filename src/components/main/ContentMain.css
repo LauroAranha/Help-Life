@@ -1,22 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*{font-family: sans-serif; list-style: none; text-decoration: none; margin: 0; padding: 0;}
-
-body{color: #21489d; background-color: #f8f8f8;}
-body::-webkit-scrollbar {width: 6px;}
-body::-webkit-scrollbar-track {background: transparent;}
-body::-webkit-scrollbar-thumb {background-color: #f14b3d;}
-
 .main{margin: 5% 8%; display: flex; align-items: center; justify-content: space-around;}
-h1{font-size: 5em; padding: 5% 0%;}
-p{font-size: 1em;}
-a{color: currentColor;}
+#contentMain h1{font-size: 5em; padding: 5% 0%;}
+#contentMain p{font-size: 1em;}
+#contentMain a{color: currentColor;}
 .part1{display: flex; align-items: center; margin: 5% 9%;}
 .part1 h2{font-size: 50px; padding: 5% 0%;}
 .part1 p{font-family: 'Noto Sans Mono', monospace; font-size: 18px;}
+
+#contentMain .registrar{background-color: #f8f8f8; color: #21489d; border: 2px solid #21489d; font-size: 20px; padding: 12px 20px; font-family: 'Source Sans Pro', sans-serif; transition: background-color, color 0.3s;}
+#contentMain .registrar:hover{background-color: #21489d; color: #f8f8f8; cursor: pointer;}
 
 @media only screen and (max-width: 1015px) {
     .main{display:block; margin: 3% 8%;}

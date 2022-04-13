@@ -1,20 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{font-family: sans-serif; list-style: none; text-decoration: none; margin: 0; padding: 0;}
-body{color: #21489d; background-color: #f8f8f8;}
-body::-webkit-scrollbar {width: 6px;}
-body::-webkit-scrollbar-track {background: transparent;}
-body::-webkit-scrollbar-thumb {background-color: #f14b3d;}
-#items-menu{display: flex; align-items: center;}
-#user{cursor: pointer;}
 h1{font-size: 5em; padding: 5% 0%;}
 p{font-size: 1em;}
 a{color: currentColor;}
 .part2{margin: 0% 8%; display: flex; align-items:center;}
 .part2 h2{font-size: 50px; padding: 5% 0%;}
 .part2 p{font-family: 'Noto Sans Mono', monospace; font-size: 18px;}
+
 @media only screen and (max-width: 1015px) {
     .part2{display: block; margin: 5% 8%}
     .part2 img{display: initial; width: 100%;}

@@ -1,57 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{font-family: sans-serif; list-style: none; text-decoration: none; margin: 0; padding: 0;}
-body{color: #21489d; background-color: #f8f8f8;}
-body::-webkit-scrollbar {width: 6px;}
-body::-webkit-scrollbar-track {background: transparent;}
-body::-webkit-scrollbar-thumb {background-color: #f14b3d;}
-.menu{display: flex; justify-content: space-between; padding: 4% 6% 0% 6%; align-items: center;}
-.menu li a{padding: 0px 25px; color: #21489d;}
+#nav .menu{display: flex; justify-content: space-between; padding: 4% 6% 0% 6%; align-items: center;}
+#nav .menu li a{padding: 0px 25px; color: #21489d;}
+
+#logo li a{font-family: 'Noto Sans Mono', monospace; font-size: 30px; color: #f14b3d; border-left: solid 4px #f14b3d;}
+
 #items-menu{display: flex; align-items: center;}
 #user{cursor: pointer;}
-h1{font-size: 5em; padding: 5% 0%;}
-p{font-size: 1em;}
-a{color: currentColor;}
 
-button{cursor: pointer;}
-
-.grifo{border-bottom: 2px solid transparent; transition: 0.1s;}
-.grifo:hover{border-bottom: 2px solid #21489d;}
-#hl li a{font-family: 'Noto Sans Mono', monospace; font-size: 30px; color: #f14b3d; border-left: solid 4px #f14b3d;}
-.registrar{background-color: #f8f8f8; color: #21489d; border: 2px solid #21489d; font-size: 20px; padding: 12px 20px; font-family: 'Source Sans Pro', sans-serif; transition: background-color, color 0.3s;}
-.registrar:hover{background-color: #21489d; color: #f8f8f8; cursor: pointer;}
-footer{width: 100%; height: 50px; background-color: #f14b3d; color: #f8f8f8; margin-top: -4px; display: flex; justify-content: space-around;}
-.txt-footer{font-family: 'Raleway', sans-serif; font-size: 18px;}
-.txt-font{font-family: 'Raleway', sans-serif; font-size: 14px;}
-.icon{background-color: #f14b3d; border: none; color: #f8f8f8; padding: 0px 10px;}
-.icon:hover{filter:opacity(75%) ;}
-button{background-color: transparent; border: transparent; color: currentColor;}
-
-
-
-#heart{cursor: pointer;}
-
-@media only screen and (max-width: 1015px) {
-    .main{display:block; margin: 3% 8%;}
-    .main img{display: initial; width: 100%; margin-top: 2%;}
-    h1{font-size: 4em; padding: 2% 0%;}
-    .part1{display: block; margin: 5% 8%;}
-    .part2{display: block; margin: 5% 8%}
-    .part2 img{display: initial; width: 100%;}
-    .part4 section{margin: 2% 6%;}
-    .part4 h2{font-size: 2em;}
-    .inf li section {margin: 0;}
-    .inf svg{display: initial;}
-    .registrar{font-size: 20px; padding: 6px 10px; margin-top: 1%;}
-    img{display: none;}
-
-}
-
-@media only screen and (max-width: 800px) {
-  #hl, #user, .menu{display: none;}
-  h1{font-size: 3em;}
-  .registrar{margin-top: 2%; border: navajowhite; border-bottom: 2px solid;}
-  .icon{display: none;}
-}
+#nav .grifo{border-bottom: 2px solid transparent; transition: 0.1s;}
+#nav .grifo:hover{border-bottom: 2px solid #21489d;}
