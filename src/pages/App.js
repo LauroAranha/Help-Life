@@ -5,7 +5,7 @@ import Ong from './main/Ong'
 import ErrorPage from './Error'
 import Nav from '../components/props/Nav'
 import Footer from '../components/props/Footer'
-
+import './Default.css'
 function App() {
   return (
     <Router>
@@ -17,7 +17,9 @@ function App() {
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
+      
     </Router>
+    
   )
 }
 
