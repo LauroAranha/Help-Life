@@ -2,7 +2,7 @@ import "./ContentOng.css";
 
 import vetor6 from "../../img/vetor6.png";
 const contentOng = () => (
-  <div id ="contentOng">
+  <div id="contentOng">
     <div className="part3">
       <section>
         <h1>
@@ -18,7 +18,7 @@ const contentOng = () => (
           Registrar-se/login
         </button>
       </section>
-      <img src={vetor6} />
+      <img alt="imagem6" src={vetor6} />
     </div>
     <section id="cards-orgs"></section>
   </div>

@@ -18,7 +18,7 @@ const contentAbout = () => (
           profissionais e voluntários e comece a ajudar pessoas hoje mesmo.
         </p>
       </section>
-      <img src={vetor7} />
+      <img alt="imagem7" src={vetor7} />
     </div>
   </div>
 );

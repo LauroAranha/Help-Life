@@ -11,11 +11,11 @@ const contentMain = () => (
           REGISTRE-SE
         </button>
       </section>
-      <img src={vetor} />
+      <img alt="imagem1" src={vetor} />
     </div>
 
     <div className="part1">
-      <img src={vetor4} />
+      <img alt="imagem4" src={vetor4} />
       <section>
         <h2>Como te ajudamos</h2>
         <p>
