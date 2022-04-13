@@ -1,10 +1,8 @@
-import React from "react";
 import "./ContentOng.css";
 
 import vetor6 from "../../img/vetor6.png";
-
-export default (props) => (
-  <div>
+const contentOng = () => (
+  <div id ="contentOng">
     <div className="part3">
       <section>
         <h1>
@@ -25,3 +23,4 @@ export default (props) => (
     <section id="cards-orgs"></section>
   </div>
 );
+export default contentOng;

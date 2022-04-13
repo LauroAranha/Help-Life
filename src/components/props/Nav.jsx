@@ -1,12 +1,11 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./Nav.css";
 
-export default (props) => (
-  <div>
+const nav = () => (
+  <div id = "nav">
     <nav>
       <ul className="menu">
-        <section id="hl">
+        <section id="logo">
           <li>
             <Link to="/">Help Life</Link>
           </li>
@@ -35,37 +34,7 @@ export default (props) => (
           </li>
         </section>
       </ul>
-      {/* <div className="menu-overlay"></div>
-      <a href="#" className="menu-open">
-        <div className="container">
-          <div className="bar1"></div>
-          <div className="bar2"></div>
-          <div className="bar3"></div>
-        </div>
-      </a>
-
-      <div className="side-menu-wrapper">
-        <a href="#" className="menu-close">
-          ×
-        </a>
-        <ul>
-          <li>
-            <a href="index.html" rel="nofollow">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="ong.html" rel="nofollow">
-              Ong
-            </a>
-          </li>
-          <li>
-            <a href="sobrenos.html" rel="nofollow">
-              Sobre nós
-            </a>
-          </li>
-        </ul>
-      </div> */}
     </nav>
   </div>
 );
+export default nav;

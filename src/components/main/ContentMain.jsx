@@ -1,10 +1,9 @@
-import React from "react";
 import "./ContentMain.css";
 import vetor4 from "../../img/vetor4.png";
 import vetor from "../../img/vetor.png";
 
-export default (props) => (
-  <div>
+const contentMain = () => (
+  <div id ="contentMain">
     <div className="main">
       <section>
         <h1>Nós podemos te ajudar</h1>
@@ -29,6 +28,7 @@ export default (props) => (
         </p>
       </section>
     </div>
-
   </div>
 );
+
+export default contentMain;

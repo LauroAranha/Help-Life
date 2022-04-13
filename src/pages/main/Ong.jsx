@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import ContentOng from "../../components/ong/ContentOng";
 
 
