@@ -2,7 +2,7 @@ import "./Footer.css";
 
 const footer = () => (
   <div id="footer">
-    <div classNme="baixo">
+    <div className="baixo">
       <svg
         /* style={{transform:rotate(0deg), transition: 0.3s}} */
         viewBox="0 0 1440 100"
