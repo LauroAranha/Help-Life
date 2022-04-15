@@ -12,6 +12,7 @@ const LoginForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("submit", { email, password });
+
     login(email, password); //integração com o contexto e API
   };
 

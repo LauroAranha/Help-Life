@@ -5,13 +5,9 @@
   text-decoration: none;
 }
 
-body {
+.box {
   background-color: #f1f1f1;
   color: #161616;
-}
-
-.box {
-  background-color: white;
   display: block;
   width: 40%;
   margin: 8% auto;
